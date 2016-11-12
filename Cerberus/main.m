@@ -6,18 +6,14 @@
 //  Copyright © 2016 haifisch. All rights reserved.
 //
 
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <unistd.h>
-
 #import <Foundation/Foundation.h>
-#import "libenclave.h"
-#import "libcerberus.h"
-#import "Cerberus-Bridging-Header.h"
+#import "Common.h"
 
 #define PRGM_VER "v1.0.1"
 
 libenclave *enclave_api;
+libcerberus *cerberus_instance;
+AESCrypt *crypt_instance;
 
 // message queue method
 void check_server_for_messages() {
@@ -50,38 +46,21 @@ void print_help() {
     
 }
 
-bool check_for_config() {
-    struct stat st = {0};
-    
-    if (stat(DEFAULT_CERBERUS_PATH, &st) == -1) {
-        mkdir(DEFAULT_CERBERUS_PATH, 0700);
-    }
 
-    NSData *data = [[NSFileManager defaultManager] contentsAtPath:@DEFAULT_CERBERUS_PATH];
-    NSString *password = @"Secret password";
-    NSData *ciphertext = [RNCrypto encryptData:data password:password];
-
-    if (data) {
-        
-    }
-    return NO;
-}
-
-void setup_config () {
-    
-}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int input, inputBuffer;
         char boolin, boolBuffer;
         enclave_api = [[libenclave alloc] init];
+        crypt_instance = [[AESCrypt alloc] init];
+        cerberus_instance = [[libcerberus alloc] init];
         
-        if (!check_for_config()) { // check if config exists
+        if (![cerberus_instance cerberus_check_for_config]) { // check if config exists
             printf("No previous config found, would you like to create a new one? (y\n)\n>");
             boolin = scanf(" %c", &boolBuffer);
             if (boolBuffer == 'y') {
-                
+                [cerberus_instance cerberus_setup_config];
             } else {
                 printf("Canceling...\n");
             }
@@ -89,7 +68,7 @@ int main(int argc, const char * argv[]) {
         }
         
         printf("Checking for existing public key on server...\n");
-        if (![enclave_api is_enclave_user_public_key_stored:[[NSUserDefaults standardUserDefaults] objectForKey:@"enclave_user_public_key"]]) {
+        if (![enclave_api is_enclave_user_public_key_stored:[cerberus_instance cerberus_user_public_key]]) {
             printf("No public key is stored on the server.\n");
         } else {
             printf("Existing public key is stored on the server.\n");

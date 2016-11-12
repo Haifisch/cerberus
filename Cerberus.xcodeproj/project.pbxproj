@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FC367BAC704D3F40790BB8B /* Pods_Cerberus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4362007332402B5E94F502AB /* Pods_Cerberus.framework */; };
 		B9D83FAB1DCF39BD0053C079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FAA1DCF39BD0053C079 /* main.m */; };
 		B9D83FC81DD434FC0053C079 /* libenclave.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FBB1DD432930053C079 /* libenclave.m */; };
 		B9D83FCA1DD6EAC30053C079 /* libcerberus.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FC91DD6EAC30053C079 /* libcerberus.m */; };
@@ -14,6 +15,8 @@
 		B9D83FE01DD6F1A40053C079 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FDA1DD6F1A40053C079 /* NSData+Base64.m */; };
 		B9D83FE11DD6F1A40053C079 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FDC1DD6F1A40053C079 /* NSData+CommonCrypto.m */; };
 		B9D83FE21DD6F1A40053C079 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FDE1DD6F1A40053C079 /* NSString+Base64.m */; };
+		B9D83FF31DD6F5B10053C079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D83FF21DD6F5B10053C079 /* Foundation.framework */; };
+		B9D8407D1DD6FFC00053C079 /* _25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8407C1DD6FFC00053C079 /* _25519.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D9C93024EAB383E4954E2B3 /* Pods-Cerberus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cerberus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cerberus/Pods-Cerberus.debug.xcconfig"; sourceTree = "<group>"; };
+		4362007332402B5E94F502AB /* Pods_Cerberus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cerberus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D83FA71DCF39BD0053C079 /* Cerberus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cerberus; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D83FAA1DCF39BD0053C079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9D83FB91DD432930053C079 /* libenclave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libenclave.h; path = ../libenclave/libenclave.h; sourceTree = "<group>"; };
@@ -44,6 +49,10 @@
 		B9D83FDD1DD6F1A40053C079 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		B9D83FDE1DD6F1A40053C079 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		B9D83FE41DD6F2A80053C079 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		B9D83FF21DD6F5B10053C079 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9D8407B1DD6FAD00053C079 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		B9D8407C1DD6FFC00053C079 /* _25519.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = _25519.framework; path = "../../Library/Developer/Xcode/DerivedData/Cerberus-gzperasnxnnkaxdoefcaupioytvb/Build/Products/Debug/25519/_25519.framework"; sourceTree = "<group>"; };
+		DA12CF0A277BAB9F25EE2298 /* Pods-Cerberus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cerberus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cerberus/Pods-Cerberus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D83FF31DD6F5B10053C079 /* Foundation.framework in Frameworks */,
+				0FC367BAC704D3F40790BB8B /* Pods_Cerberus.framework in Frameworks */,
+				B9D8407D1DD6FFC00053C079 /* _25519.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,8 @@
 				B9D83FE41DD6F2A80053C079 /* readme.txt */,
 				B9D83FA91DCF39BD0053C079 /* Cerberus */,
 				B9D83FA81DCF39BD0053C079 /* Products */,
+				B9D83FF11DD6F5B10053C079 /* Frameworks */,
+				FCED49DCC1DF993FA1FE2782 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +91,7 @@
 		B9D83FA91DCF39BD0053C079 /* Cerberus */ = {
 			isa = PBXGroup;
 			children = (
+				B9D8407B1DD6FAD00053C079 /* Common.h */,
 				B9D83FAA1DCF39BD0053C079 /* main.m */,
 				B9D83FD21DD6EF170053C079 /* Libraries */,
 			);
@@ -126,6 +141,25 @@
 			name = Libraries;
 			sourceTree = "<group>";
 		};
+		B9D83FF11DD6F5B10053C079 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8407C1DD6FFC00053C079 /* _25519.framework */,
+				B9D83FF21DD6F5B10053C079 /* Foundation.framework */,
+				4362007332402B5E94F502AB /* Pods_Cerberus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCED49DCC1DF993FA1FE2782 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C93024EAB383E4954E2B3 /* Pods-Cerberus.debug.xcconfig */,
+				DA12CF0A277BAB9F25EE2298 /* Pods-Cerberus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9D83FAE1DCF39BD0053C079 /* Build configuration list for PBXNativeTarget "Cerberus" */;
 			buildPhases = (
+				5AC12E328C1F990D9519BBE7 /* [CP] Check Pods Manifest.lock */,
 				B9D83FA31DCF39BD0053C079 /* Sources */,
 				B9D83FA41DCF39BD0053C079 /* Frameworks */,
 				B9D83FA51DCF39BD0053C079 /* CopyFiles */,
+				CD55329208C716D6BF3943BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,6 +215,39 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AC12E328C1F990D9519BBE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD55329208C716D6BF3943BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cerberus/Pods-Cerberus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B9D83FA31DCF39BD0053C079 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		B9D83FAF1DCF39BD0053C079 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D9C93024EAB383E4954E2B3 /* Pods-Cerberus.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7A8DWQ7DS7;
@@ -300,6 +370,7 @@
 		};
 		B9D83FB01DCF39BD0053C079 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA12CF0A277BAB9F25EE2298 /* Pods-Cerberus.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7A8DWQ7DS7;
@@ -329,6 +400,7 @@
 				B9D83FB01DCF39BD0053C079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

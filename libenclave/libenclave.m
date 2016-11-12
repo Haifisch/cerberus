@@ -7,7 +7,8 @@
 //
 
 #import "libenclave.h"
-#define ENDPOINT_URL @"https://env1.suntzusecurity.com/enclave.php"
+#import "Common.h"
+
 
 @implementation libenclave
 
