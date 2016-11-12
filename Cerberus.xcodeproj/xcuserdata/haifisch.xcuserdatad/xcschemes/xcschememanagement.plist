@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>libenclave.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>B9D83FA61DCF39BD0053C079</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9D83FB61DD432930053C079</key>
 		<dict>
 			<key>primary</key>
 			<true/>

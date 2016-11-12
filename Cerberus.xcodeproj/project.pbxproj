@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B9D83FAB1DCF39BD0053C079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FAA1DCF39BD0053C079 /* main.m */; };
+		B9D83FC81DD434FC0053C079 /* libenclave.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FBB1DD432930053C079 /* libenclave.m */; };
+		B9D83FCA1DD6EAC30053C079 /* libcerberus.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FC91DD6EAC30053C079 /* libcerberus.m */; };
+		B9D83FDF1DD6F1A40053C079 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FD81DD6F1A40053C079 /* AESCrypt.m */; };
+		B9D83FE01DD6F1A40053C079 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FDA1DD6F1A40053C079 /* NSData+Base64.m */; };
+		B9D83FE11DD6F1A40053C079 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FDC1DD6F1A40053C079 /* NSData+CommonCrypto.m */; };
+		B9D83FE21DD6F1A40053C079 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D83FDE1DD6F1A40053C079 /* NSString+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,19 @@
 /* Begin PBXFileReference section */
 		B9D83FA71DCF39BD0053C079 /* Cerberus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cerberus; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D83FAA1DCF39BD0053C079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9D83FB91DD432930053C079 /* libenclave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libenclave.h; path = ../libenclave/libenclave.h; sourceTree = "<group>"; };
+		B9D83FBB1DD432930053C079 /* libenclave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = libenclave.m; path = ../libenclave/libenclave.m; sourceTree = "<group>"; };
+		B9D83FC91DD6EAC30053C079 /* libcerberus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libcerberus.m; sourceTree = "<group>"; };
+		B9D83FCB1DD6EACE0053C079 /* libcerberus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libcerberus.h; sourceTree = "<group>"; };
+		B9D83FD71DD6F1A40053C079 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		B9D83FD81DD6F1A40053C079 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		B9D83FD91DD6F1A40053C079 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		B9D83FDA1DD6F1A40053C079 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		B9D83FDB1DD6F1A40053C079 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		B9D83FDC1DD6F1A40053C079 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		B9D83FDD1DD6F1A40053C079 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		B9D83FDE1DD6F1A40053C079 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		B9D83FE41DD6F2A80053C079 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +60,7 @@
 		B9D83F9E1DCF39BD0053C079 = {
 			isa = PBXGroup;
 			children = (
+				B9D83FE41DD6F2A80053C079 /* readme.txt */,
 				B9D83FA91DCF39BD0053C079 /* Cerberus */,
 				B9D83FA81DCF39BD0053C079 /* Products */,
 			);
@@ -58,8 +78,52 @@
 			isa = PBXGroup;
 			children = (
 				B9D83FAA1DCF39BD0053C079 /* main.m */,
+				B9D83FD21DD6EF170053C079 /* Libraries */,
 			);
 			path = Cerberus;
+			sourceTree = "<group>";
+		};
+		B9D83FCF1DD6EF030053C079 /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				B9D83FD71DD6F1A40053C079 /* AESCrypt.h */,
+				B9D83FD81DD6F1A40053C079 /* AESCrypt.m */,
+				B9D83FD91DD6F1A40053C079 /* NSData+Base64.h */,
+				B9D83FDA1DD6F1A40053C079 /* NSData+Base64.m */,
+				B9D83FDB1DD6F1A40053C079 /* NSData+CommonCrypto.h */,
+				B9D83FDC1DD6F1A40053C079 /* NSData+CommonCrypto.m */,
+				B9D83FDD1DD6F1A40053C079 /* NSString+Base64.h */,
+				B9D83FDE1DD6F1A40053C079 /* NSString+Base64.m */,
+			);
+			name = AESCrypt;
+			sourceTree = "<group>";
+		};
+		B9D83FD01DD6EF0A0053C079 /* libenclave */ = {
+			isa = PBXGroup;
+			children = (
+				B9D83FB91DD432930053C079 /* libenclave.h */,
+				B9D83FBB1DD432930053C079 /* libenclave.m */,
+			);
+			name = libenclave;
+			sourceTree = "<group>";
+		};
+		B9D83FD11DD6EF100053C079 /* libcerberus */ = {
+			isa = PBXGroup;
+			children = (
+				B9D83FCB1DD6EACE0053C079 /* libcerberus.h */,
+				B9D83FC91DD6EAC30053C079 /* libcerberus.m */,
+			);
+			name = libcerberus;
+			sourceTree = "<group>";
+		};
+		B9D83FD21DD6EF170053C079 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B9D83FD11DD6EF100053C079 /* libcerberus */,
+				B9D83FD01DD6EF0A0053C079 /* libenclave */,
+				B9D83FCF1DD6EF030053C079 /* AESCrypt */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +158,7 @@
 					B9D83FA61DCF39BD0053C079 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7A8DWQ7DS7;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,7 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D83FDF1DD6F1A40053C079 /* AESCrypt.m in Sources */,
 				B9D83FAB1DCF39BD0053C079 /* main.m in Sources */,
+				B9D83FE11DD6F1A40053C079 /* NSData+CommonCrypto.m in Sources */,
+				B9D83FE01DD6F1A40053C079 /* NSData+Base64.m in Sources */,
+				B9D83FCA1DD6EAC30053C079 /* libcerberus.m in Sources */,
+				B9D83FC81DD434FC0053C079 /* libenclave.m in Sources */,
+				B9D83FE21DD6F1A40053C079 /* NSString+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,16 +288,25 @@
 		B9D83FAF1DCF39BD0053C079 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7A8DWQ7DS7;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cerberus/Cerberus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B9D83FB01DCF39BD0053C079 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7A8DWQ7DS7;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cerberus/Cerberus-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
