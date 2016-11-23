@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		089ACEF5A84BCB6F83CA01C6D296AB0C /* fe_sq2.c in Sources */ = {isa = PBXBuildFile; fileRef = DCD85CA005C808A67204DBCA4B27855E /* fe_sq2.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		08A94374AC9AECA37A98BA1A5A1EDE50 /* ge_msub.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E551A4DF3C92FECD4904B76F20F6BB /* ge_msub.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		09122364544E79974E156D424B00AACA /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = C99632FC5BCBFC35F1E47867470DEB14 /* sc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		09C1AC0FBD4B7A6218FBBC89052B8B13 /* crypto_int64.h in Headers */ = {isa = PBXBuildFile; fileRef = 242BE914D92A36034CC6FF7CBC24E4C8 /* crypto_int64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0CD9D0AAF2BC711589F8A635B75343BA /* ge_precomp_0.c in Sources */ = {isa = PBXBuildFile; fileRef = 718D5655FD79E800AB1D3185AD6EFA6D /* ge_precomp_0.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0D954B924DC80192E6E8405A9B990DCA /* Randomness.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA3B4DF9BEC5E09C03E1BEA5B9C0FEE /* Randomness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102E29A82912AC293E947F87A39A1313 /* crypto_uint64.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E74ADA72B7269E3BBCBE036BA805E3 /* crypto_uint64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1097DE95D9CDB262EFE04D735E74A644 /* fe_isnegative.c in Sources */ = {isa = PBXBuildFile; fileRef = DFC15642BF8F5864D3E32CB26435A37A /* fe_isnegative.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		17C9F5FB445C23B9EFD5CE4BB196CB91 /* fe_sq.c in Sources */ = {isa = PBXBuildFile; fileRef = ADD0E94CC5AFC734D170A4B30D705D8B /* fe_sq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1DEC5A4C1DF9BCFF4072465B4D9753DA /* crypto_int32.h in Headers */ = {isa = PBXBuildFile; fileRef = C5479A1ACD990402119E4DCE1F665898 /* crypto_int32.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1FF87E64994F4F5761C23D89FC4361A8 /* 25519-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE531E9D7406E02D4A4481E17D3757CB /* 25519-dummy.m */; };
+		21371F538BFD586679E90C609C9B0B74 /* ge_p3_to_p2.c in Sources */ = {isa = PBXBuildFile; fileRef = C38EACEDE1BA05A132138D13BD1A4A2E /* ge_p3_to_p2.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2199E16ED9DFD5A163E6A336C422E6DB /* Pods-Cerberus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 834CED8D17A6A80991C6A420E1C45B12 /* Pods-Cerberus-dummy.m */; };
+		21C7D15B773B4EA8DF86391043A2C88C /* Curve25519.m in Sources */ = {isa = PBXBuildFile; fileRef = C444876C2AC6591BB0ACF0800B8D185A /* Curve25519.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		22F652B78AF09D03A0B6C2A6150C20D8 /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = 6067A70AA504E6C12087889BE1786290 /* compare.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		268FBB66E116FF8E03888936F90C305C /* fe_frombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = 854E37FE0B38E5418295B20F906CE53C /* fe_frombytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2754A1364B88F6F2AAEA5E0735207958 /* fe_1.c in Sources */ = {isa = PBXBuildFile; fileRef = B9B077871B3C3B51CCFC82E965FE3B44 /* fe_1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A55260A4EE80ED84ED25C7C0B663733 /* fe_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = D892CAFA1373CC81E65BD753D7CF743F /* fe_mul.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2AB9126A309D7CD144DEA4E23D1FEF78 /* ge_p3_to_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = 5710DBF80C34C1DB6CAE97CD2CFBB123 /* ge_p3_to_cached.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2D9BAE4ED99663B7ED7157A2004033D0 /* 25519-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A438089EF80FC73ADD4E806918A70119 /* 25519-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DBDA90C3B81748D81F7024E9BA475B7 /* sc_reduce.c in Sources */ = {isa = PBXBuildFile; fileRef = 62884F0DAB80CBC5116C13BAE8755CDA /* sc_reduce.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3A5EB7157FBC93F7702C46A537963CA2 /* ge_p3_0.c in Sources */ = {isa = PBXBuildFile; fileRef = E05C266D67E6BBBDDB7E07A5620AD833 /* ge_p3_0.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3F6F56302F058E9302FBE5951D91C9EB /* ge.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F6A5043B972BECAE8181E8B1C27988 /* ge.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		430F98291179E8ADA2E3C1635FD6EDF7 /* sc_muladd.c in Sources */ = {isa = PBXBuildFile; fileRef = CF6991859421130C9E65ADBA8CAB6C9D /* sc_muladd.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		44E627D988AD1F2ECD8468D1B13B1412 /* ge_p2_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2BEF4A117257A09EDD884DCCC089D /* ge_p2_dbl.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		462013DD15CD86339C5E444BCBFE054E /* fe_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = D8DE8B6EE6CDEC6C8ED42D224B0D70D1 /* fe_sub.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		47D57512E43DAD523808A2792392135B /* ge_add.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0082EAE3D6534D1DD007260ECAA97C /* ge_add.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4824BE5BA795A13B8F900DF9E373C340 /* ge_sub.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4FAC69B88843C3A6F1DC75B7791C25 /* ge_sub.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		498F501DB1A3D341188D861B3D8F9798 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0B7087496C176E9EFE2F924A937C84 /* Cocoa.framework */; };
+		4C8FB5B05CA51C7F4956798593907B04 /* compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC26540F5F688BFFE1EE67C8F9C1656 /* compare.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51F9E308A101E2401271C62C593FDB2C /* ge_p1p1_to_p2.c in Sources */ = {isa = PBXBuildFile; fileRef = 787A95052F327EE247E908BA8A280DC5 /* ge_p1p1_to_p2.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		52624BF6F67035DE6DA1C55673321E8E /* ge_p3_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = CDC066F1968AE108BAB4781650FD8FFB /* ge_p3_tobytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		533637B50EA39EE27C0996E5768D9AFA /* ge_p1p1_to_p3.c in Sources */ = {isa = PBXBuildFile; fileRef = EAE36EA2C42CC44E007FB31B0394AD27 /* ge_p1p1_to_p3.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		589297BD04E8C808DC301ADD59BDF791 /* fe_0.c in Sources */ = {isa = PBXBuildFile; fileRef = 98E666D4130450042FD8C75737D091D3 /* fe_0.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5A70019185712F2174714C93E996D85B /* pow22523.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEB520662A641F34787A6AF1C9374E5 /* pow22523.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B7C25B66EFA795810C6DB72389A023A /* api.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D8E383DCCFC5A360F308C47EEB5B31 /* api.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5D01EC3ADB344B52779A20D52B23670D /* fe.h in Headers */ = {isa = PBXBuildFile; fileRef = EF39BAA547A052B04FBE4D84583BCBA4 /* fe.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5E2169C8CEB632ABE00395034D85E2D2 /* fe_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EE631E142B367627702BC57398EF65C /* fe_tobytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6098D35955349225B44D6E73BFA7D80D /* zeroize.h in Headers */ = {isa = PBXBuildFile; fileRef = 254ECA8E4225E08E28A704B9032AB751 /* zeroize.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67BC9F714D9493A1BEEADE62C1C4337B /* sign_modified.c in Sources */ = {isa = PBXBuildFile; fileRef = B1571B234679B3EBFF32B9DF1A0265C1 /* sign_modified.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6C7A2D213B68341D4B1E87047B6EB95F /* ge_p2_dbl.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4F59B2336C547A2A4B3A6037899DD7 /* ge_p2_dbl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6CA0A3AA4B435074D599882F1BB7590C /* base2.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A8F923102650C82B59CF7FFCCB1C4F /* base2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		72B2B0666D07D54EBD7936807B0603D9 /* ge_scalarmult_base.c in Sources */ = {isa = PBXBuildFile; fileRef = BF1C0B37C32671A570C91513783EFB21 /* ge_scalarmult_base.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		74247CD960EDC32B98858520EE61F188 /* ge_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = D1061931996161FC57265886F24ADF2B /* ge_tobytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		746587410F3B26854F33BBF1A007F1F8 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = A01038B977450754FFE88BAD8DF478BE /* base.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78DA35137DFA02E2992F58859518B217 /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF5FA296C72D6D109E1E9E6EF7F03FD /* crypto_sign_edwards25519sha512batch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80D70F4BFFA3DEEA3148BEC098E66B85 /* ge_msub.h in Headers */ = {isa = PBXBuildFile; fileRef = 19874BC551F447C92B4C600DBBF292D4 /* ge_msub.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		810D0DEC2776B4A8FDF2F01521A02692 /* ge_madd.h in Headers */ = {isa = PBXBuildFile; fileRef = ADFA0C71869576C27C258B504CAC66D9 /* ge_madd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		88D1C5114F73FF5048F36E6587E58D2F /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = F4DE3E21F0C10876ED894CA7CD60A4E4 /* sign.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8931D7969FF736A680095E145CB7307E /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 95ED14F3E68CC68A214D04D111E6B50D /* blocks.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		913303585A99AD02C3AE744DB430CFEE /* curve25519-donna.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E43DAB44E078BE95CA85DB4F27DA93D /* curve25519-donna.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		92BA896EB7FB38702780144E41AFA2CD /* fe_cmov.c in Sources */ = {isa = PBXBuildFile; fileRef = 4771934DB26CC984FE5979FFB517CE0F /* fe_cmov.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		93EBB514B35588AF132F7D6A5A97E65E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0B7087496C176E9EFE2F924A937C84 /* Cocoa.framework */; };
+		9670C7A7F6837A8DA406F80AA1C58A59 /* crypto_uint32.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A09DF7678EA8685E7E10A951A7AF2F /* crypto_uint32.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		98D484164014760E8EBB535F5BBCA0DB /* fe_add.c in Sources */ = {isa = PBXBuildFile; fileRef = E682F3D6391F234C39AA24C25A0BD829 /* fe_add.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9B1BCF7E071759A0FC3B755555C77427 /* d.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B510DC3893F56EA14E0C1E985D42B8 /* d.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B5E9FD2E557B6BA97442CEF3065A768 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46113D3917711B20CB751285B6ECB0D6 /* Security.framework */; };
+		9CE075A4E8C6D79CCD59636E8A99BDD9 /* ge_frombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = A48DD50228DDE7E22DAC2428714DAD13 /* ge_frombytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9DC15072D4B9B266FE280694E3FCF9E3 /* crypto_sign.h in Headers */ = {isa = PBXBuildFile; fileRef = 67269B584778F66823F2095471CD50C4 /* crypto_sign.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1A9394D978E9B545DC818F2EDF93239 /* ge_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = A0C30CA045BF759E271E1D15B5423DB5 /* ge_sub.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ADD6F8CF65B98831174A7F2D39EA1719 /* curve_sigs.c in Sources */ = {isa = PBXBuildFile; fileRef = 80ADC02CB2A4908EA329C10EF638DAE0 /* curve_sigs.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AED352BFB9E75D4FBFDC8FC16A74AD6D /* fe_invert.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD9CE576BABA490506BB053E1B9C33A /* fe_invert.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B068C9B39B94BB3372F14762FF41EAEE /* crypto_verify_32.h in Headers */ = {isa = PBXBuildFile; fileRef = E820A43D4B37FD26C42CE6A368413370 /* crypto_verify_32.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0BCBE802292AD5F7D59020F405BE26A /* zeroize.c in Sources */ = {isa = PBXBuildFile; fileRef = 65BDAE498E108020DBC3A32EC4AE4852 /* zeroize.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B9EDE726CFADB65CC14BFDE9DEEBEBAF /* fe_copy.c in Sources */ = {isa = PBXBuildFile; fileRef = EE60D9CE2898DA6323693A7F3E14E57D /* fe_copy.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BBEE9CB089D9A6C4D6CF49639265F556 /* crypto_hash_sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9D470EDB1FCA1DC738C63B2038CD29 /* crypto_hash_sha512.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD41C8BFDC21E52CAFB588A019FDD4FB /* ge_p3_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A67769A0C88BFB1D5425F9EE068775D /* ge_p3_dbl.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C09CF4B91807FD3D73FB58D3DEC02506 /* Randomness.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A373907EB88E57286A8C134B1705172 /* Randomness.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C4240345B9905BFBDC0003CB37AFE09E /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = AF0875D7213E59E945145A3D51E1E6E1 /* hash.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C85DA15FC3926B2CCC33CCF8372AEECB /* Ed25519.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB81CE2F267DEAE2FCB5516114A5394 /* Ed25519.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CBCE0B7531B34C41DB1FA1A585CE8644 /* fe_pow22523.c in Sources */ = {isa = PBXBuildFile; fileRef = C71B8C789239316968F451E2B1C5AD50 /* fe_pow22523.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CED3FB08A07F22E639142ABF55C55C25 /* Curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = C15E7279C18175E6DEAB48431BEDC89A /* Curve25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF1AB5FF636D97C1E707E2E36783D9CD /* ge_double_scalarmult.c in Sources */ = {isa = PBXBuildFile; fileRef = 50130641130D815500C5FF5B89461DE1 /* ge_double_scalarmult.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CF1ECE7601CE21B7FA619344EC1F96A1 /* ge_add.c in Sources */ = {isa = PBXBuildFile; fileRef = C240AF4C4296D398F101EBE9D9F29E68 /* ge_add.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CFBD86273F02CF0FE868881F495F8A4A /* sqrtm1.h in Headers */ = {isa = PBXBuildFile; fileRef = 006763D1E9962DA3810AAE7D0FD35E9B /* sqrtm1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D6DFD766A139473159628B31E8994AC6 /* ge_madd.c in Sources */ = {isa = PBXBuildFile; fileRef = 783B7FB732FF5F54F596EB8450D34EE7 /* ge_madd.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DDB426699005E9F491D0A0B5F21828B2 /* d2.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF65A140E43B9FB8AD2E675210DA6A7 /* d2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF602554E6FCD02992A70219E1FB2F28 /* Ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = B2651589E9537ACC71A2BEA36D7552CB /* Ed25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5E0CA08AD6612C2051DE046F879EE07 /* curve_sigs.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2EBC5ED5CBF7E962C60055414D7CDB /* curve_sigs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8ACE429CD873D2FE0890C9BD56C3E52 /* fe_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A5224B383BD8DECC507020EC83058D7 /* fe_neg.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ED56BE5C61411DC35CDEB6ABEA4F07E6 /* fe_isnonzero.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C05C3235A5402360B90F917CB9B6205 /* fe_isnonzero.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ED75554482541CC9B6F4AFC22A5CFEEB /* Pods-Cerberus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59729EECF960709A3B568087CFB99380 /* Pods-Cerberus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF44D1EA8AC8D4DC322618F584A0167C /* pow225521.h in Headers */ = {isa = PBXBuildFile; fileRef = EDBD89A20B926322978456CAAE92B53B /* pow225521.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3A2FE2E63F75E591F8CA56A8E537813 /* open.c in Sources */ = {isa = PBXBuildFile; fileRef = 12B59E2D79D85B776166BDF725B66FE1 /* open.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FFCFBFADFECBB8787B92C4DB08212207 /* ge_p2_0.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D7B1B8C170D6EDA9C9F4709BC9900 /* ge_p2_0.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C52CB22AD7997EEE1D11B9A9E8598412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C5E198E4772DFB81161CA9794ADF5D1;
+			remoteInfo = 25519;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006763D1E9962DA3810AAE7D0FD35E9B /* sqrtm1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqrtm1.h; path = Sources/ed25519/sqrtm1.h; sourceTree = "<group>"; };
+		0A4FAC69B88843C3A6F1DC75B7791C25 /* ge_sub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_sub.h; path = Sources/ed25519/ge_sub.h; sourceTree = "<group>"; };
+		0A9D470EDB1FCA1DC738C63B2038CD29 /* crypto_hash_sha512.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_hash_sha512.h; path = Sources/ed25519/additions/crypto_hash_sha512.h; sourceTree = "<group>"; };
+		11D8E383DCCFC5A360F308C47EEB5B31 /* api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = api.h; path = Sources/ed25519/api.h; sourceTree = "<group>"; };
+		12B59E2D79D85B776166BDF725B66FE1 /* open.c */ = {isa = PBXFileReference; includeInIndex = 1; name = open.c; path = Sources/ed25519/open.c; sourceTree = "<group>"; };
+		19874BC551F447C92B4C600DBBF292D4 /* ge_msub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_msub.h; path = Sources/ed25519/ge_msub.h; sourceTree = "<group>"; };
+		242BE914D92A36034CC6FF7CBC24E4C8 /* crypto_int64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_int64.h; path = Sources/ed25519/nacl_includes/crypto_int64.h; sourceTree = "<group>"; };
+		254ECA8E4225E08E28A704B9032AB751 /* zeroize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zeroize.h; path = Sources/ed25519/additions/zeroize.h; sourceTree = "<group>"; };
+		2A5224B383BD8DECC507020EC83058D7 /* fe_neg.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_neg.c; path = Sources/ed25519/fe_neg.c; sourceTree = "<group>"; };
+		2C05C3235A5402360B90F917CB9B6205 /* fe_isnonzero.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_isnonzero.c; path = Sources/ed25519/fe_isnonzero.c; sourceTree = "<group>"; };
+		2F2EBC5ED5CBF7E962C60055414D7CDB /* curve_sigs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curve_sigs.h; path = Sources/ed25519/additions/curve_sigs.h; sourceTree = "<group>"; };
+		3224455C2A1E961BA508F472602F23FF /* 25519.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = 25519.modulemap; sourceTree = "<group>"; };
+		44A09DF7678EA8685E7E10A951A7AF2F /* crypto_uint32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_uint32.h; path = Sources/ed25519/nacl_includes/crypto_uint32.h; sourceTree = "<group>"; };
+		46113D3917711B20CB751285B6ECB0D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		4771934DB26CC984FE5979FFB517CE0F /* fe_cmov.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_cmov.c; path = Sources/ed25519/fe_cmov.c; sourceTree = "<group>"; };
+		4B0D7B1B8C170D6EDA9C9F4709BC9900 /* ge_p2_0.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p2_0.c; path = Sources/ed25519/ge_p2_0.c; sourceTree = "<group>"; };
+		4BC26540F5F688BFFE1EE67C8F9C1656 /* compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = compare.h; path = Sources/ed25519/additions/compare.h; sourceTree = "<group>"; };
+		4E43DAB44E078BE95CA85DB4F27DA93D /* curve25519-donna.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "curve25519-donna.c"; path = "Sources/Curve25519/curve25519-donna.c"; sourceTree = "<group>"; };
+		50130641130D815500C5FF5B89461DE1 /* ge_double_scalarmult.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_double_scalarmult.c; path = Sources/ed25519/ge_double_scalarmult.c; sourceTree = "<group>"; };
+		51291473BA5422157BEAE189C64C9AEF /* Pods-Cerberus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cerberus-resources.sh"; sourceTree = "<group>"; };
+		515B394C4C8F356B746E5CFB52A3FF04 /* 25519-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "25519-prefix.pch"; sourceTree = "<group>"; };
+		5710DBF80C34C1DB6CAE97CD2CFBB123 /* ge_p3_to_cached.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_to_cached.c; path = Sources/ed25519/ge_p3_to_cached.c; sourceTree = "<group>"; };
+		5720414B23332144449F0F55E82A4046 /* Pods-Cerberus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Cerberus.modulemap"; sourceTree = "<group>"; };
+		59729EECF960709A3B568087CFB99380 /* Pods-Cerberus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cerberus-umbrella.h"; sourceTree = "<group>"; };
+		5A67769A0C88BFB1D5425F9EE068775D /* ge_p3_dbl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_dbl.c; path = Sources/ed25519/ge_p3_dbl.c; sourceTree = "<group>"; };
+		5B1366BF7D588E86B4137491D8AD4A2C /* 25519.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = 25519.xcconfig; sourceTree = "<group>"; };
+		5EA2BEF4A117257A09EDD884DCCC089D /* ge_p2_dbl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p2_dbl.c; path = Sources/ed25519/ge_p2_dbl.c; sourceTree = "<group>"; };
+		6067A70AA504E6C12087889BE1786290 /* compare.c */ = {isa = PBXFileReference; includeInIndex = 1; name = compare.c; path = Sources/ed25519/additions/compare.c; sourceTree = "<group>"; };
+		62884F0DAB80CBC5116C13BAE8755CDA /* sc_reduce.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sc_reduce.c; path = Sources/ed25519/sc_reduce.c; sourceTree = "<group>"; };
+		65BDAE498E108020DBC3A32EC4AE4852 /* zeroize.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zeroize.c; path = Sources/ed25519/additions/zeroize.c; sourceTree = "<group>"; };
+		67269B584778F66823F2095471CD50C4 /* crypto_sign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_sign.h; path = Sources/ed25519/nacl_includes/crypto_sign.h; sourceTree = "<group>"; };
+		6A373907EB88E57286A8C134B1705172 /* Randomness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Randomness.m; path = Classes/Randomness.m; sourceTree = "<group>"; };
+		6A88671BD024ED63809CE2E68CDBFFC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BF5FA296C72D6D109E1E9E6EF7F03FD /* crypto_sign_edwards25519sha512batch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_sign_edwards25519sha512batch.h; path = Sources/ed25519/nacl_includes/crypto_sign_edwards25519sha512batch.h; sourceTree = "<group>"; };
+		718D5655FD79E800AB1D3185AD6EFA6D /* ge_precomp_0.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_precomp_0.c; path = Sources/ed25519/ge_precomp_0.c; sourceTree = "<group>"; };
+		71E551A4DF3C92FECD4904B76F20F6BB /* ge_msub.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_msub.c; path = Sources/ed25519/ge_msub.c; sourceTree = "<group>"; };
+		783B7FB732FF5F54F596EB8450D34EE7 /* ge_madd.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_madd.c; path = Sources/ed25519/ge_madd.c; sourceTree = "<group>"; };
+		787A95052F327EE247E908BA8A280DC5 /* ge_p1p1_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p1p1_to_p2.c; path = Sources/ed25519/ge_p1p1_to_p2.c; sourceTree = "<group>"; };
+		788F73F83333DCE6E458D5591D73DD00 /* _25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = _25519.framework; path = 25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE631E142B367627702BC57398EF65C /* fe_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_tobytes.c; path = Sources/ed25519/fe_tobytes.c; sourceTree = "<group>"; };
+		80A953061126B9BD3E2B68331959F976 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80ADC02CB2A4908EA329C10EF638DAE0 /* curve_sigs.c */ = {isa = PBXFileReference; includeInIndex = 1; name = curve_sigs.c; path = Sources/ed25519/additions/curve_sigs.c; sourceTree = "<group>"; };
+		80B079B79B94BAFBBC193809EFF61582 /* Pods-Cerberus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cerberus-acknowledgements.plist"; sourceTree = "<group>"; };
+		834CED8D17A6A80991C6A420E1C45B12 /* Pods-Cerberus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cerberus-dummy.m"; sourceTree = "<group>"; };
+		854E37FE0B38E5418295B20F906CE53C /* fe_frombytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_frombytes.c; path = Sources/ed25519/fe_frombytes.c; sourceTree = "<group>"; };
+		8AA3B4DF9BEC5E09C03E1BEA5B9C0FEE /* Randomness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Randomness.h; path = Classes/Randomness.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94A8F923102650C82B59CF7FFCCB1C4F /* base2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base2.h; path = Sources/ed25519/base2.h; sourceTree = "<group>"; };
+		95ED14F3E68CC68A214D04D111E6B50D /* blocks.c */ = {isa = PBXFileReference; includeInIndex = 1; name = blocks.c; path = Sources/ed25519/nacl_sha512/blocks.c; sourceTree = "<group>"; };
+		98E666D4130450042FD8C75737D091D3 /* fe_0.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_0.c; path = Sources/ed25519/fe_0.c; sourceTree = "<group>"; };
+		99C457717B6A25AD7F10E63D8FB21363 /* Pods-Cerberus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cerberus.debug.xcconfig"; sourceTree = "<group>"; };
+		9BB81CE2F267DEAE2FCB5516114A5394 /* Ed25519.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Ed25519.m; path = Classes/Ed25519.m; sourceTree = "<group>"; };
+		9FEB520662A641F34787A6AF1C9374E5 /* pow22523.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pow22523.h; path = Sources/ed25519/pow22523.h; sourceTree = "<group>"; };
+		A01038B977450754FFE88BAD8DF478BE /* base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base.h; path = Sources/ed25519/base.h; sourceTree = "<group>"; };
+		A0C30CA045BF759E271E1D15B5423DB5 /* ge_sub.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_sub.c; path = Sources/ed25519/ge_sub.c; sourceTree = "<group>"; };
+		A438089EF80FC73ADD4E806918A70119 /* 25519-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "25519-umbrella.h"; sourceTree = "<group>"; };
+		A48DD50228DDE7E22DAC2428714DAD13 /* ge_frombytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_frombytes.c; path = Sources/ed25519/ge_frombytes.c; sourceTree = "<group>"; };
+		A4B510DC3893F56EA14E0C1E985D42B8 /* d.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = d.h; path = Sources/ed25519/d.h; sourceTree = "<group>"; };
+		ACD9CE576BABA490506BB053E1B9C33A /* fe_invert.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_invert.c; path = Sources/ed25519/fe_invert.c; sourceTree = "<group>"; };
+		ADD0E94CC5AFC734D170A4B30D705D8B /* fe_sq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_sq.c; path = Sources/ed25519/fe_sq.c; sourceTree = "<group>"; };
+		ADFA0C71869576C27C258B504CAC66D9 /* ge_madd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_madd.h; path = Sources/ed25519/ge_madd.h; sourceTree = "<group>"; };
+		AF0875D7213E59E945145A3D51E1E6E1 /* hash.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hash.c; path = Sources/ed25519/nacl_sha512/hash.c; sourceTree = "<group>"; };
+		B1571B234679B3EBFF32B9DF1A0265C1 /* sign_modified.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sign_modified.c; path = Sources/ed25519/additions/sign_modified.c; sourceTree = "<group>"; };
+		B2651589E9537ACC71A2BEA36D7552CB /* Ed25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Ed25519.h; path = Classes/Ed25519.h; sourceTree = "<group>"; };
+		B6A1B18DAD490514B7D2EA6A51F85105 /* Pods-Cerberus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cerberus-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B8F6A5043B972BECAE8181E8B1C27988 /* ge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge.h; path = Sources/ed25519/ge.h; sourceTree = "<group>"; };
+		B9B077871B3C3B51CCFC82E965FE3B44 /* fe_1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_1.c; path = Sources/ed25519/fe_1.c; sourceTree = "<group>"; };
+		BB322A789A6EFF1E97AC469CC0562E64 /* Pods_Cerberus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Cerberus.framework; path = "Pods-Cerberus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1C0B37C32671A570C91513783EFB21 /* ge_scalarmult_base.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_scalarmult_base.c; path = Sources/ed25519/ge_scalarmult_base.c; sourceTree = "<group>"; };
+		C15E7279C18175E6DEAB48431BEDC89A /* Curve25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Curve25519.h; path = Classes/Curve25519.h; sourceTree = "<group>"; };
+		C240AF4C4296D398F101EBE9D9F29E68 /* ge_add.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_add.c; path = Sources/ed25519/ge_add.c; sourceTree = "<group>"; };
+		C38EACEDE1BA05A132138D13BD1A4A2E /* ge_p3_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_to_p2.c; path = Sources/ed25519/ge_p3_to_p2.c; sourceTree = "<group>"; };
+		C444876C2AC6591BB0ACF0800B8D185A /* Curve25519.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Curve25519.m; path = Classes/Curve25519.m; sourceTree = "<group>"; };
+		C457B70BA8C02CFB871220073C0DCE05 /* Pods-Cerberus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cerberus-frameworks.sh"; sourceTree = "<group>"; };
+		C5479A1ACD990402119E4DCE1F665898 /* crypto_int32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_int32.h; path = Sources/ed25519/nacl_includes/crypto_int32.h; sourceTree = "<group>"; };
+		C71B8C789239316968F451E2B1C5AD50 /* fe_pow22523.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_pow22523.c; path = Sources/ed25519/fe_pow22523.c; sourceTree = "<group>"; };
+		C99632FC5BCBFC35F1E47867470DEB14 /* sc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sc.h; path = Sources/ed25519/sc.h; sourceTree = "<group>"; };
+		CA4F59B2336C547A2A4B3A6037899DD7 /* ge_p2_dbl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_p2_dbl.h; path = Sources/ed25519/ge_p2_dbl.h; sourceTree = "<group>"; };
+		CDC066F1968AE108BAB4781650FD8FFB /* ge_p3_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_tobytes.c; path = Sources/ed25519/ge_p3_tobytes.c; sourceTree = "<group>"; };
+		CDF65A140E43B9FB8AD2E675210DA6A7 /* d2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = d2.h; path = Sources/ed25519/d2.h; sourceTree = "<group>"; };
+		CF6991859421130C9E65ADBA8CAB6C9D /* sc_muladd.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sc_muladd.c; path = Sources/ed25519/sc_muladd.c; sourceTree = "<group>"; };
+		D1061931996161FC57265886F24ADF2B /* ge_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_tobytes.c; path = Sources/ed25519/ge_tobytes.c; sourceTree = "<group>"; };
+		D892CAFA1373CC81E65BD753D7CF743F /* fe_mul.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_mul.c; path = Sources/ed25519/fe_mul.c; sourceTree = "<group>"; };
+		D8DE8B6EE6CDEC6C8ED42D224B0D70D1 /* fe_sub.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_sub.c; path = Sources/ed25519/fe_sub.c; sourceTree = "<group>"; };
+		DC0082EAE3D6534D1DD007260ECAA97C /* ge_add.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_add.h; path = Sources/ed25519/ge_add.h; sourceTree = "<group>"; };
+		DCD85CA005C808A67204DBCA4B27855E /* fe_sq2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_sq2.c; path = Sources/ed25519/fe_sq2.c; sourceTree = "<group>"; };
+		DFC15642BF8F5864D3E32CB26435A37A /* fe_isnegative.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_isnegative.c; path = Sources/ed25519/fe_isnegative.c; sourceTree = "<group>"; };
+		E05C266D67E6BBBDDB7E07A5620AD833 /* ge_p3_0.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_0.c; path = Sources/ed25519/ge_p3_0.c; sourceTree = "<group>"; };
+		E2467BE83F05A20D4B6F129B67EE4F76 /* Pods-Cerberus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cerberus.release.xcconfig"; sourceTree = "<group>"; };
+		E682F3D6391F234C39AA24C25A0BD829 /* fe_add.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_add.c; path = Sources/ed25519/fe_add.c; sourceTree = "<group>"; };
+		E820A43D4B37FD26C42CE6A368413370 /* crypto_verify_32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_verify_32.h; path = Sources/ed25519/nacl_includes/crypto_verify_32.h; sourceTree = "<group>"; };
+		EAE36EA2C42CC44E007FB31B0394AD27 /* ge_p1p1_to_p3.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p1p1_to_p3.c; path = Sources/ed25519/ge_p1p1_to_p3.c; sourceTree = "<group>"; };
+		EDBD89A20B926322978456CAAE92B53B /* pow225521.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pow225521.h; path = Sources/ed25519/pow225521.h; sourceTree = "<group>"; };
+		EE531E9D7406E02D4A4481E17D3757CB /* 25519-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "25519-dummy.m"; sourceTree = "<group>"; };
+		EE60D9CE2898DA6323693A7F3E14E57D /* fe_copy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_copy.c; path = Sources/ed25519/fe_copy.c; sourceTree = "<group>"; };
+		EF39BAA547A052B04FBE4D84583BCBA4 /* fe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fe.h; path = Sources/ed25519/fe.h; sourceTree = "<group>"; };
+		F4DE3E21F0C10876ED894CA7CD60A4E4 /* sign.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sign.c; path = Sources/ed25519/sign.c; sourceTree = "<group>"; };
+		F8E74ADA72B7269E3BBCBE036BA805E3 /* crypto_uint64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_uint64.h; path = Sources/ed25519/nacl_includes/crypto_uint64.h; sourceTree = "<group>"; };
+		FD0B7087496C176E9EFE2F924A937C84 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CE07FC4A98D02FE1165B5BEEE935A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498F501DB1A3D341188D861B3D8F9798 /* Cocoa.framework in Frameworks */,
+				9B5E9FD2E557B6BA97442CEF3065A768 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8E632F45A1D3953030E4431A41017A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EBB514B35588AF132F7D6A5A97E65E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19B72B4A701DFDB00FC76186A4B81C09 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				FD0B7087496C176E9EFE2F924A937C84 /* Cocoa.framework */,
+				46113D3917711B20CB751285B6ECB0D6 /* Security.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		19E8A5DCF15416EA269BFFAEAC9BCD28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B0AFBE264FAD22F556378C1A7D45604 /* 25519 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1B0AFBE264FAD22F556378C1A7D45604 /* 25519 */ = {
+			isa = PBXGroup;
+			children = (
+				11D8E383DCCFC5A360F308C47EEB5B31 /* api.h */,
+				A01038B977450754FFE88BAD8DF478BE /* base.h */,
+				94A8F923102650C82B59CF7FFCCB1C4F /* base2.h */,
+				95ED14F3E68CC68A214D04D111E6B50D /* blocks.c */,
+				6067A70AA504E6C12087889BE1786290 /* compare.c */,
+				4BC26540F5F688BFFE1EE67C8F9C1656 /* compare.h */,
+				0A9D470EDB1FCA1DC738C63B2038CD29 /* crypto_hash_sha512.h */,
+				C5479A1ACD990402119E4DCE1F665898 /* crypto_int32.h */,
+				242BE914D92A36034CC6FF7CBC24E4C8 /* crypto_int64.h */,
+				67269B584778F66823F2095471CD50C4 /* crypto_sign.h */,
+				6BF5FA296C72D6D109E1E9E6EF7F03FD /* crypto_sign_edwards25519sha512batch.h */,
+				44A09DF7678EA8685E7E10A951A7AF2F /* crypto_uint32.h */,
+				F8E74ADA72B7269E3BBCBE036BA805E3 /* crypto_uint64.h */,
+				E820A43D4B37FD26C42CE6A368413370 /* crypto_verify_32.h */,
+				C15E7279C18175E6DEAB48431BEDC89A /* Curve25519.h */,
+				C444876C2AC6591BB0ACF0800B8D185A /* Curve25519.m */,
+				4E43DAB44E078BE95CA85DB4F27DA93D /* curve25519-donna.c */,
+				80ADC02CB2A4908EA329C10EF638DAE0 /* curve_sigs.c */,
+				2F2EBC5ED5CBF7E962C60055414D7CDB /* curve_sigs.h */,
+				A4B510DC3893F56EA14E0C1E985D42B8 /* d.h */,
+				CDF65A140E43B9FB8AD2E675210DA6A7 /* d2.h */,
+				B2651589E9537ACC71A2BEA36D7552CB /* Ed25519.h */,
+				9BB81CE2F267DEAE2FCB5516114A5394 /* Ed25519.m */,
+				EF39BAA547A052B04FBE4D84583BCBA4 /* fe.h */,
+				98E666D4130450042FD8C75737D091D3 /* fe_0.c */,
+				B9B077871B3C3B51CCFC82E965FE3B44 /* fe_1.c */,
+				E682F3D6391F234C39AA24C25A0BD829 /* fe_add.c */,
+				4771934DB26CC984FE5979FFB517CE0F /* fe_cmov.c */,
+				EE60D9CE2898DA6323693A7F3E14E57D /* fe_copy.c */,
+				854E37FE0B38E5418295B20F906CE53C /* fe_frombytes.c */,
+				ACD9CE576BABA490506BB053E1B9C33A /* fe_invert.c */,
+				DFC15642BF8F5864D3E32CB26435A37A /* fe_isnegative.c */,
+				2C05C3235A5402360B90F917CB9B6205 /* fe_isnonzero.c */,
+				D892CAFA1373CC81E65BD753D7CF743F /* fe_mul.c */,
+				2A5224B383BD8DECC507020EC83058D7 /* fe_neg.c */,
+				C71B8C789239316968F451E2B1C5AD50 /* fe_pow22523.c */,
+				ADD0E94CC5AFC734D170A4B30D705D8B /* fe_sq.c */,
+				DCD85CA005C808A67204DBCA4B27855E /* fe_sq2.c */,
+				D8DE8B6EE6CDEC6C8ED42D224B0D70D1 /* fe_sub.c */,
+				7EE631E142B367627702BC57398EF65C /* fe_tobytes.c */,
+				B8F6A5043B972BECAE8181E8B1C27988 /* ge.h */,
+				C240AF4C4296D398F101EBE9D9F29E68 /* ge_add.c */,
+				DC0082EAE3D6534D1DD007260ECAA97C /* ge_add.h */,
+				50130641130D815500C5FF5B89461DE1 /* ge_double_scalarmult.c */,
+				A48DD50228DDE7E22DAC2428714DAD13 /* ge_frombytes.c */,
+				783B7FB732FF5F54F596EB8450D34EE7 /* ge_madd.c */,
+				ADFA0C71869576C27C258B504CAC66D9 /* ge_madd.h */,
+				71E551A4DF3C92FECD4904B76F20F6BB /* ge_msub.c */,
+				19874BC551F447C92B4C600DBBF292D4 /* ge_msub.h */,
+				787A95052F327EE247E908BA8A280DC5 /* ge_p1p1_to_p2.c */,
+				EAE36EA2C42CC44E007FB31B0394AD27 /* ge_p1p1_to_p3.c */,
+				4B0D7B1B8C170D6EDA9C9F4709BC9900 /* ge_p2_0.c */,
+				5EA2BEF4A117257A09EDD884DCCC089D /* ge_p2_dbl.c */,
+				CA4F59B2336C547A2A4B3A6037899DD7 /* ge_p2_dbl.h */,
+				E05C266D67E6BBBDDB7E07A5620AD833 /* ge_p3_0.c */,
+				5A67769A0C88BFB1D5425F9EE068775D /* ge_p3_dbl.c */,
+				5710DBF80C34C1DB6CAE97CD2CFBB123 /* ge_p3_to_cached.c */,
+				C38EACEDE1BA05A132138D13BD1A4A2E /* ge_p3_to_p2.c */,
+				CDC066F1968AE108BAB4781650FD8FFB /* ge_p3_tobytes.c */,
+				718D5655FD79E800AB1D3185AD6EFA6D /* ge_precomp_0.c */,
+				BF1C0B37C32671A570C91513783EFB21 /* ge_scalarmult_base.c */,
+				A0C30CA045BF759E271E1D15B5423DB5 /* ge_sub.c */,
+				0A4FAC69B88843C3A6F1DC75B7791C25 /* ge_sub.h */,
+				D1061931996161FC57265886F24ADF2B /* ge_tobytes.c */,
+				AF0875D7213E59E945145A3D51E1E6E1 /* hash.c */,
+				12B59E2D79D85B776166BDF725B66FE1 /* open.c */,
+				9FEB520662A641F34787A6AF1C9374E5 /* pow22523.h */,
+				EDBD89A20B926322978456CAAE92B53B /* pow225521.h */,
+				8AA3B4DF9BEC5E09C03E1BEA5B9C0FEE /* Randomness.h */,
+				6A373907EB88E57286A8C134B1705172 /* Randomness.m */,
+				C99632FC5BCBFC35F1E47867470DEB14 /* sc.h */,
+				CF6991859421130C9E65ADBA8CAB6C9D /* sc_muladd.c */,
+				62884F0DAB80CBC5116C13BAE8755CDA /* sc_reduce.c */,
+				F4DE3E21F0C10876ED894CA7CD60A4E4 /* sign.c */,
+				B1571B234679B3EBFF32B9DF1A0265C1 /* sign_modified.c */,
+				006763D1E9962DA3810AAE7D0FD35E9B /* sqrtm1.h */,
+				65BDAE498E108020DBC3A32EC4AE4852 /* zeroize.c */,
+				254ECA8E4225E08E28A704B9032AB751 /* zeroize.h */,
+				3B17C2F9A0FF51489B6D3E1C5DE3FDEA /* Support Files */,
+			);
+			name = 25519;
+			path = 25519;
+			sourceTree = "<group>";
+		};
+		20FBB82FA67EC5B8DD16C92689CA9902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				788F73F83333DCE6E458D5591D73DD00 /* _25519.framework */,
+				BB322A789A6EFF1E97AC469CC0562E64 /* Pods_Cerberus.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B17C2F9A0FF51489B6D3E1C5DE3FDEA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3224455C2A1E961BA508F472602F23FF /* 25519.modulemap */,
+				5B1366BF7D588E86B4137491D8AD4A2C /* 25519.xcconfig */,
+				EE531E9D7406E02D4A4481E17D3757CB /* 25519-dummy.m */,
+				515B394C4C8F356B746E5CFB52A3FF04 /* 25519-prefix.pch */,
+				A438089EF80FC73ADD4E806918A70119 /* 25519-umbrella.h */,
+				80A953061126B9BD3E2B68331959F976 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/25519";
+			sourceTree = "<group>";
+		};
+		75E59A2628A878FF4393659461D9FD07 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E27E756DE1A27486C7B9A713C7442EA /* Pods-Cerberus */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
+				19E8A5DCF15416EA269BFFAEAC9BCD28 /* Pods */,
+				20FBB82FA67EC5B8DD16C92689CA9902 /* Products */,
+				75E59A2628A878FF4393659461D9FD07 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E27E756DE1A27486C7B9A713C7442EA /* Pods-Cerberus */ = {
+			isa = PBXGroup;
+			children = (
+				6A88671BD024ED63809CE2E68CDBFFC9 /* Info.plist */,
+				5720414B23332144449F0F55E82A4046 /* Pods-Cerberus.modulemap */,
+				B6A1B18DAD490514B7D2EA6A51F85105 /* Pods-Cerberus-acknowledgements.markdown */,
+				80B079B79B94BAFBBC193809EFF61582 /* Pods-Cerberus-acknowledgements.plist */,
+				834CED8D17A6A80991C6A420E1C45B12 /* Pods-Cerberus-dummy.m */,
+				C457B70BA8C02CFB871220073C0DCE05 /* Pods-Cerberus-frameworks.sh */,
+				51291473BA5422157BEAE189C64C9AEF /* Pods-Cerberus-resources.sh */,
+				59729EECF960709A3B568087CFB99380 /* Pods-Cerberus-umbrella.h */,
+				99C457717B6A25AD7F10E63D8FB21363 /* Pods-Cerberus.debug.xcconfig */,
+				E2467BE83F05A20D4B6F129B67EE4F76 /* Pods-Cerberus.release.xcconfig */,
+			);
+			name = "Pods-Cerberus";
+			path = "Target Support Files/Pods-Cerberus";
+			sourceTree = "<group>";
+		};
+		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19B72B4A701DFDB00FC76186A4B81C09 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		156C3FBA38F1EA3694D83A1F936FBB44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9BAE4ED99663B7ED7157A2004033D0 /* 25519-umbrella.h in Headers */,
+				5B7C25B66EFA795810C6DB72389A023A /* api.h in Headers */,
+				746587410F3B26854F33BBF1A007F1F8 /* base.h in Headers */,
+				6CA0A3AA4B435074D599882F1BB7590C /* base2.h in Headers */,
+				4C8FB5B05CA51C7F4956798593907B04 /* compare.h in Headers */,
+				BBEE9CB089D9A6C4D6CF49639265F556 /* crypto_hash_sha512.h in Headers */,
+				1DEC5A4C1DF9BCFF4072465B4D9753DA /* crypto_int32.h in Headers */,
+				09C1AC0FBD4B7A6218FBBC89052B8B13 /* crypto_int64.h in Headers */,
+				9DC15072D4B9B266FE280694E3FCF9E3 /* crypto_sign.h in Headers */,
+				78DA35137DFA02E2992F58859518B217 /* crypto_sign_edwards25519sha512batch.h in Headers */,
+				9670C7A7F6837A8DA406F80AA1C58A59 /* crypto_uint32.h in Headers */,
+				102E29A82912AC293E947F87A39A1313 /* crypto_uint64.h in Headers */,
+				B068C9B39B94BB3372F14762FF41EAEE /* crypto_verify_32.h in Headers */,
+				CED3FB08A07F22E639142ABF55C55C25 /* Curve25519.h in Headers */,
+				E5E0CA08AD6612C2051DE046F879EE07 /* curve_sigs.h in Headers */,
+				9B1BCF7E071759A0FC3B755555C77427 /* d.h in Headers */,
+				DDB426699005E9F491D0A0B5F21828B2 /* d2.h in Headers */,
+				DF602554E6FCD02992A70219E1FB2F28 /* Ed25519.h in Headers */,
+				5D01EC3ADB344B52779A20D52B23670D /* fe.h in Headers */,
+				3F6F56302F058E9302FBE5951D91C9EB /* ge.h in Headers */,
+				47D57512E43DAD523808A2792392135B /* ge_add.h in Headers */,
+				810D0DEC2776B4A8FDF2F01521A02692 /* ge_madd.h in Headers */,
+				80D70F4BFFA3DEEA3148BEC098E66B85 /* ge_msub.h in Headers */,
+				6C7A2D213B68341D4B1E87047B6EB95F /* ge_p2_dbl.h in Headers */,
+				4824BE5BA795A13B8F900DF9E373C340 /* ge_sub.h in Headers */,
+				5A70019185712F2174714C93E996D85B /* pow22523.h in Headers */,
+				EF44D1EA8AC8D4DC322618F584A0167C /* pow225521.h in Headers */,
+				0D954B924DC80192E6E8405A9B990DCA /* Randomness.h in Headers */,
+				09122364544E79974E156D424B00AACA /* sc.h in Headers */,
+				CFBD86273F02CF0FE868881F495F8A4A /* sqrtm1.h in Headers */,
+				6098D35955349225B44D6E73BFA7D80D /* zeroize.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DE06098BBF9524BAB4CCB54672F0F75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED75554482541CC9B6F4AFC22A5CFEEB /* Pods-Cerberus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8C5E198E4772DFB81161CA9794ADF5D1 /* 25519 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA67878D770019D5BD2692A5B9A1E0C /* Build configuration list for PBXNativeTarget "25519" */;
+			buildPhases = (
+				4D066A47EAD41FCCAB3ADD1231DCE158 /* Sources */,
+				3CE07FC4A98D02FE1165B5BEEE935A6B /* Frameworks */,
+				156C3FBA38F1EA3694D83A1F936FBB44 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 25519;
+			productName = 25519;
+			productReference = 788F73F83333DCE6E458D5591D73DD00 /* _25519.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F7159D9BB43004E1B53D80BE9D9EBD6 /* Pods-Cerberus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5F720B96337F4947E5B70D698CD1DA /* Build configuration list for PBXNativeTarget "Pods-Cerberus" */;
+			buildPhases = (
+				01E504C81DB9949DFC3143DADAE7BB38 /* Sources */,
+				7E8E632F45A1D3953030E4431A41017A /* Frameworks */,
+				1DE06098BBF9524BAB4CCB54672F0F75 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B6392164F0E10FE417538E546A9E6E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Cerberus";
+			productName = "Pods-Cerberus";
+			productReference = BB322A789A6EFF1E97AC469CC0562E64 /* Pods_Cerberus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 20FBB82FA67EC5B8DD16C92689CA9902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C5E198E4772DFB81161CA9794ADF5D1 /* 25519 */,
+				8F7159D9BB43004E1B53D80BE9D9EBD6 /* Pods-Cerberus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01E504C81DB9949DFC3143DADAE7BB38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2199E16ED9DFD5A163E6A336C422E6DB /* Pods-Cerberus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D066A47EAD41FCCAB3ADD1231DCE158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF87E64994F4F5761C23D89FC4361A8 /* 25519-dummy.m in Sources */,
+				8931D7969FF736A680095E145CB7307E /* blocks.c in Sources */,
+				22F652B78AF09D03A0B6C2A6150C20D8 /* compare.c in Sources */,
+				913303585A99AD02C3AE744DB430CFEE /* curve25519-donna.c in Sources */,
+				21C7D15B773B4EA8DF86391043A2C88C /* Curve25519.m in Sources */,
+				ADD6F8CF65B98831174A7F2D39EA1719 /* curve_sigs.c in Sources */,
+				C85DA15FC3926B2CCC33CCF8372AEECB /* Ed25519.m in Sources */,
+				589297BD04E8C808DC301ADD59BDF791 /* fe_0.c in Sources */,
+				2754A1364B88F6F2AAEA5E0735207958 /* fe_1.c in Sources */,
+				98D484164014760E8EBB535F5BBCA0DB /* fe_add.c in Sources */,
+				92BA896EB7FB38702780144E41AFA2CD /* fe_cmov.c in Sources */,
+				B9EDE726CFADB65CC14BFDE9DEEBEBAF /* fe_copy.c in Sources */,
+				268FBB66E116FF8E03888936F90C305C /* fe_frombytes.c in Sources */,
+				AED352BFB9E75D4FBFDC8FC16A74AD6D /* fe_invert.c in Sources */,
+				1097DE95D9CDB262EFE04D735E74A644 /* fe_isnegative.c in Sources */,
+				ED56BE5C61411DC35CDEB6ABEA4F07E6 /* fe_isnonzero.c in Sources */,
+				2A55260A4EE80ED84ED25C7C0B663733 /* fe_mul.c in Sources */,
+				E8ACE429CD873D2FE0890C9BD56C3E52 /* fe_neg.c in Sources */,
+				CBCE0B7531B34C41DB1FA1A585CE8644 /* fe_pow22523.c in Sources */,
+				17C9F5FB445C23B9EFD5CE4BB196CB91 /* fe_sq.c in Sources */,
+				089ACEF5A84BCB6F83CA01C6D296AB0C /* fe_sq2.c in Sources */,
+				462013DD15CD86339C5E444BCBFE054E /* fe_sub.c in Sources */,
+				5E2169C8CEB632ABE00395034D85E2D2 /* fe_tobytes.c in Sources */,
+				CF1ECE7601CE21B7FA619344EC1F96A1 /* ge_add.c in Sources */,
+				CF1AB5FF636D97C1E707E2E36783D9CD /* ge_double_scalarmult.c in Sources */,
+				9CE075A4E8C6D79CCD59636E8A99BDD9 /* ge_frombytes.c in Sources */,
+				D6DFD766A139473159628B31E8994AC6 /* ge_madd.c in Sources */,
+				08A94374AC9AECA37A98BA1A5A1EDE50 /* ge_msub.c in Sources */,
+				51F9E308A101E2401271C62C593FDB2C /* ge_p1p1_to_p2.c in Sources */,
+				533637B50EA39EE27C0996E5768D9AFA /* ge_p1p1_to_p3.c in Sources */,
+				FFCFBFADFECBB8787B92C4DB08212207 /* ge_p2_0.c in Sources */,
+				44E627D988AD1F2ECD8468D1B13B1412 /* ge_p2_dbl.c in Sources */,
+				3A5EB7157FBC93F7702C46A537963CA2 /* ge_p3_0.c in Sources */,
+				BD41C8BFDC21E52CAFB588A019FDD4FB /* ge_p3_dbl.c in Sources */,
+				2AB9126A309D7CD144DEA4E23D1FEF78 /* ge_p3_to_cached.c in Sources */,
+				21371F538BFD586679E90C609C9B0B74 /* ge_p3_to_p2.c in Sources */,
+				52624BF6F67035DE6DA1C55673321E8E /* ge_p3_tobytes.c in Sources */,
+				0CD9D0AAF2BC711589F8A635B75343BA /* ge_precomp_0.c in Sources */,
+				72B2B0666D07D54EBD7936807B0603D9 /* ge_scalarmult_base.c in Sources */,
+				A1A9394D978E9B545DC818F2EDF93239 /* ge_sub.c in Sources */,
+				74247CD960EDC32B98858520EE61F188 /* ge_tobytes.c in Sources */,
+				C4240345B9905BFBDC0003CB37AFE09E /* hash.c in Sources */,
+				F3A2FE2E63F75E591F8CA56A8E537813 /* open.c in Sources */,
+				C09CF4B91807FD3D73FB58D3DEC02506 /* Randomness.m in Sources */,
+				430F98291179E8ADA2E3C1635FD6EDF7 /* sc_muladd.c in Sources */,
+				2DBDA90C3B81748D81F7024E9BA475B7 /* sc_reduce.c in Sources */,
+				88D1C5114F73FF5048F36E6587E58D2F /* sign.c in Sources */,
+				67BC9F714D9493A1BEEADE62C1C4337B /* sign_modified.c in Sources */,
+				B0BCBE802292AD5F7D59020F405BE26A /* zeroize.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B6392164F0E10FE417538E546A9E6E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 25519;
+			target = 8C5E198E4772DFB81161CA9794ADF5D1 /* 25519 */;
+			targetProxy = C52CB22AD7997EEE1D11B9A9E8598412 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34342BBF37D3A9ED85FF2EB654934920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4D35095F8C8816ED5C93EF74E53870F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C457717B6A25AD7F10E63D8FB21363 /* Pods-Cerberus.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Cerberus/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cerberus/Pods-Cerberus.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Cerberus;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		640BDAF684AF772C07AF405EFC25D01A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1366BF7D588E86B4137491D8AD4A2C /* 25519.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/25519/25519-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/25519/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/25519/25519.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = _25519;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8271109A22EA5E1775599444F21A059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2467BE83F05A20D4B6F129B67EE4F76 /* Pods-Cerberus.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Cerberus/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cerberus/Pods-Cerberus.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Cerberus;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED1853AEF9BDD1A707C1CFB5166DBB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1366BF7D588E86B4137491D8AD4A2C /* 25519.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/25519/25519-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/25519/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/25519/25519.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = _25519;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6FC88CB717F413199C282718D2DC09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AA67878D770019D5BD2692A5B9A1E0C /* Build configuration list for PBXNativeTarget "25519" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640BDAF684AF772C07AF405EFC25D01A /* Debug */,
+				ED1853AEF9BDD1A707C1CFB5166DBB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34342BBF37D3A9ED85FF2EB654934920 /* Debug */,
+				F6FC88CB717F413199C282718D2DC09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5F720B96337F4947E5B70D698CD1DA /* Build configuration list for PBXNativeTarget "Pods-Cerberus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D35095F8C8816ED5C93EF74E53870F9 /* Debug */,
+				8271109A22EA5E1775599444F21A059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
